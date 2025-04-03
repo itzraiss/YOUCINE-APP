@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="KeyboardDialog" extends="Group">
+    <interface>
+        <field id="text" type="string" alwaysNotify="true"/>
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/KeyboardDialog.brs"/>
+    <children>
+        <Rectangle
+            id="background"
+            width="1920"
+            height="1080"
+            color="0x000000AA"
+        />
+        <Keyboard
+            id="keyboard"
+            translation="[300, 400]"
+        />
+    </children>
+</component>
