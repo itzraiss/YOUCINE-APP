@@ -1,0 +1,25 @@
+' MainScene.xml - Define a cena principal com WebView
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/source/components/MainScene.brs"/>
+    <children>
+        <WebView 
+            id="webView"
+            translation="[0,0]"
+            width="1920"
+            height="1080"
+            url="https://www.youcinetv.vip/"
+        />
+        <Label
+            id="loadingMessage"
+            text="Carregando YouCine TV..."
+            translation="[960, 540]"
+            width="800"
+            height="80"
+            horizAlign="center"
+            vertAlign="center"
+            font="font:LargeBoldSystemFont"
+            visible="true"
+        />
+    </children>
+</component>
